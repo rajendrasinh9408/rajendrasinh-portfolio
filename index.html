@@ -266,22 +266,21 @@
                     I am actively exploring opportunities in Data Analysis and Machine Learning. If you have an exciting project or role, please feel free to reach out.
                 </p>
 
-                <!-- Mock Contact Form (Action attribute needs a server-side endpoint) -->
-                <form action="#" method="POST" class="space-y-6 bg-gray-800 p-8 rounded-xl shadow-2xl">
+                <!-- Form updated with the new FormSubmit link -->
+                <form action="https://formsubmit.co/el/sojebi" method="POST" class="space-y-6 bg-gray-800 p-8 rounded-xl shadow-2xl">
                     <div>
-                        <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent-light focus:border-accent-light text-gray-100">
+                        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent-light focus:border-accent-light text-gray-100">
                     </div>
                     <div>
-                        <input type="email" placeholder="Your Email" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent-light focus:border-accent-light text-gray-100">
+                        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent-light focus:border-accent-light text-gray-100">
                     </div>
                     <div>
-                        <textarea placeholder="Your Message" rows="5" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent-light focus:border-accent-light text-gray-100"></textarea>
+                        <textarea name="message" placeholder="Your Message" rows="5" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent-light focus:border-accent-light text-gray-100"></textarea>
                     </div>
                     <button type="submit" class="w-full px-6 py-3 text-lg font-semibold text-gray-900 bg-accent rounded-lg shadow-xl hover:bg-teal-500 transition duration-300">
                         Send Message
                     </button>
-                    <!-- Success/Error Message Box -->
-                    <div id="status-message" class="text-center mt-4 hidden p-3 rounded-lg text-sm font-medium"></div>
+                    <!-- Status message removed as FormSubmit handles redirection -->
                 </form>
 
                 <div class="mt-8 text-lg text-gray-400 space-y-2">
@@ -309,7 +308,7 @@
             const mobileMenu = document.getElementById('mobile-menu');
             const navLinks = document.querySelectorAll('.nav-link');
             const form = document.querySelector('form');
-            const statusMessage = document.getElementById('status-message');
+            // Status message and related JS removed as FormSubmit handles the response/redirection
 
             // 1. Mobile Menu Toggle
             menuButton.addEventListener('click', () => {
@@ -338,21 +337,7 @@
                 });
             });
 
-            // 3. Simple Form Handling (Prevents default submission and shows a message)
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-
-                // Simple form validation and display success message
-                statusMessage.classList.remove('hidden', 'bg-red-600/20', 'text-red-300');
-                statusMessage.classList.add('bg-green-600/20', 'text-green-300');
-                statusMessage.textContent = "Thank you for your message! I'll get back to you soon.";
-
-                // Clear the form after a short delay
-                setTimeout(() => {
-                    form.reset();
-                    statusMessage.classList.add('hidden');
-                }, 3000);
-            });
+            // 3. Simple Form Handling (REMOVED: Form submission is now handled by FormSubmit, which redirects the user.)
         });
     </script>
 </body>
