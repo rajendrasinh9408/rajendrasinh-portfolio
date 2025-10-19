@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajendrasinh Gohil | Data Analyst & ML Specialist</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar styling (optional but visually nice) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #0D9488; /* Teal-600 */
+            border-radius: 4px;
+        }
+        /* Define Teal as the primary accent color */
+        .text-accent { color: #2DD4BF; } /* Teal-400 */
+        .border-accent { border-color: #0D9488; } /* Teal-600 */
+        .bg-accent { background-color: #0D9488; } /* Teal-600 */
+        .hover\:bg-accent-dark:hover { background-color: #0F766E; } /* Teal-700 */
+        .ring-accent-light:focus { ring-color: #2DD4BF; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Header and Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-xl">
+        <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <a href="#home" class="text-2xl font-bold text-accent hover:text-teal-300 transition duration-300">
+                &lt;RajendrasinhGohil/&gt;
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-gray-300 hover:text-accent transition duration-300">About</a>
+                <a href="#education" class="nav-link text-gray-300 hover:text-accent transition duration-300">Education</a>
+                <a href="#skills" class="nav-link text-gray-300 hover:text-accent transition duration-300">Skills</a>
+                <a href="#projects" class="nav-link text-gray-300 hover:text-accent transition duration-300">Projects</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-accent transition duration-300">Contact</a>
+            </div>
+
+            <!-- Simple Mobile Menu Toggle (Functionality handled by JS) -->
+            <button id="menu-button" class="md:hidden text-gray-300 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 shadow-xl pb-3">
+            <a href="#about" class="nav-link block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-200">About</a>
+            <a href="#education" class="nav-link block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-200">Education</a>
+            <a href="#skills" class="nav-link block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-200">Skills</a>
+            <a href="#projects" class="nav-link block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-200">Projects</a>
+            <a href="#contact" class="nav-link block px-4 py-2 text-gray-300 hover:bg-gray-700 transition duration-200">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <!-- 1. Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center pt-24 pb-16 text-center">
+            <div class="max-w-3xl">
+                <p class="text-lg text-accent font-medium mb-3">Hello, I am</p>
+                <h1 class="text-6xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight mb-4 text-white">
+                    Rajendrasinh Gohil.
+                </h1>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-400 mb-8">
+                    Quantifying Data. Building Predictive Models.
+                </h2>
+                <p class="text-xl text-gray-400 leading-relaxed mb-10">
+                    MSc Applied Mathematics student specializing in **Machine Learning**, **Data Analysis**, and **Statistical Modeling**. I leverage Python, Scikit-learn, and SQL to transform complex data into actionable insights and robust predictions.
+                </p>
+                <a href="#projects" class="inline-block px-8 py-3 text-lg font-semibold text-white bg-accent rounded-lg shadow-lg hover:bg-accent-dark transform hover:scale-105 transition duration-300">
+                    Explore My Data Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="py-20 md:py-32">
+            <h2 class="text-4xl font-bold mb-10 border-b-4 border-accent pb-2 inline-block">
+                About Me
+            </h2>
+            <div class="grid md:grid-cols-3 gap-12 items-start">
+                <div class="md:col-span-2 space-y-6 text-lg text-gray-300">
+                    <p>
+                        I am a detail-oriented Master of Science student at **NIT Warangal**, where I am building a strong foundation in **Advanced Linear Algebra**, **Probability**, and **Statistics**. This quantitative background fuels my passion for extracting meaningful patterns from large datasets.
+                    </p>
+                    <p>
+                        My focus areas include applying **Supervised and Unsupervised Learning** techniques to create reliable predictive models, particularly for real-world optimization problems. I have a keen interest in the potential of **Artificial Intelligence** in the domain of battery technology.
+                    </p>
+                    <p>
+                        I thrive in environments that demand **critical thinking** and **problem-solving**. I am actively seeking roles where I can contribute my practical experience in data analysis and technical proficiency in Python and SQL to innovative projects.
+                    </p>
+                </div>
+                <!-- Profile Image -->
+                <div class="md:col-span-1 flex justify-center md:justify-end">
+                    <!-- The image uploaded by the user is used here -->
+                    <img src="Gemini_Generated_Image_uaik7iuaik7iuaik.jpg" alt="Rajendrasinh Gohil Portrait" class="w-64 h-64 rounded-xl object-cover shadow-2xl border-4 border-accent">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2.5 Education and Achievements Section (NEW) -->
+        <section id="education" class="py-20 md:py-32 bg-gray-800 rounded-xl px-6 sm:px-12">
+            <h2 class="text-4xl font-bold mb-12 border-b-4 border-accent pb-2 inline-block">
+                Education & Milestones
+            </h2>
+
+            <div class="space-y-10">
+                <!-- Education: NIT Warangal -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-2xl border-l-4 border-accent transition duration-300 hover:bg-gray-700">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-2xl font-bold text-accent">Master of Science in Applied Mathematics</h3>
+                        <span class="text-sm font-medium text-gray-400">2024 - 2026</span>
+                    </div>
+                    <p class="text-lg text-gray-300">National Institute of Technology, Warangal</p>
+                    <p class="text-sm text-gray-400 mt-1">Current CGPA: 7.05 | Coursework: Advanced Linear Algebra, Probability and Statistics.</p>
+                </div>
+
+                <!-- Education: Diu College -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-2xl border-l-4 border-accent transition duration-300 hover:bg-gray-700">
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-2xl font-bold text-accent">Bachelor of Science in Mathematics</h3>
+                        <span class="text-sm font-medium text-gray-400">2019 - 2022</span>
+                    </div>
+                    <p class="text-lg text-gray-300">Diu College, Saurashtra University, Gujarat</p>
+                    <p class="text-sm text-gray-400 mt-1">CGPA: 7.32</p>
+                </div>
+
+                <h3 class="text-3xl font-bold pt-8 border-t border-gray-700">Key Achievements</h3>
+                <div class="grid sm:grid-cols-3 gap-6">
+                    <div class="p-5 bg-gray-900 rounded-xl shadow-inner text-center">
+                        <span class="text-4xl text-yellow-500 font-extrabold block">Rank 743</span>
+                        <p class="text-sm font-semibold mt-1">Joint Admission Test for M.Sc. (JAM)</p>
+                    </div>
+                    <div class="p-5 bg-gray-900 rounded-xl shadow-inner text-center">
+                        <span class="text-4xl text-green-500 font-extrabold block">2nd Position</span>
+                        <p class="text-sm font-semibold mt-1">Coding Competition at Technogian 2024</p>
+                    </div>
+                    <div class="p-5 bg-gray-900 rounded-xl shadow-inner text-center">
+                        <span class="text-4xl text-amber-300 font-extrabold block">Golden Badge</span>
+                        <p class="text-sm font-semibold mt-1">Python Programming & SQL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 3. Skills Section (Enhanced Visuals and More Details) -->
+        <section id="skills" class="py-20 md:py-32">
+            <h2 class="text-4xl font-bold mb-10 border-b-4 border-accent pb-2 inline-block">
+                Technical Toolkit
+            </h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- Python Skill Card (ML/Scripting) -->
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.05] hover:ring-2 ring-accent">
+                    <span class="text-4xl mb-2" role="img" aria-label="Python Icon">🐍</span>
+                    <p class="text-lg font-semibold text-white">Python</p>
+                    <p class="text-xs text-gray-400">ML/Scripting</p>
+                </div>
+
+                <!-- SQL Skill Card (Data Prep) -->
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.05] hover:ring-2 ring-accent">
+                    <span class="text-4xl mb-2" role="img" aria-label="Database Icon">🗄️</span>
+                    <p class="text-lg font-semibold text-white">SQL (MySQL)</p>
+                    <p class="text-xs text-gray-400">Data Prep</p>
+                </div>
+
+                <!-- Scikit-learn Skill Card (Predictive Modeling) -->
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.05] hover:ring-2 ring-accent">
+                    <span class="text-4xl mb-2" role="img" aria-label="ML Icon">🤖</span>
+                    <p class="text-lg font-semibold text-white">Scikit-learn</p>
+                    <p class="text-xs text-gray-400">Predictive ML</p>
+                </div>
+
+                <!-- Pandas/NumPy Skill Card (Manipulation) -->
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.05] hover:ring-2 ring-accent">
+                    <span class="text-4xl mb-2" role="img" aria-label="Data Icon">🔢</span>
+                    <p class="text-lg font-semibold text-white">Pandas/NumPy</p>
+                    <p class="text-xs text-gray-400">Data Manipulation</p>
+                </div>
+
+                <!-- Power BI Skill Card (Visualization) -->
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.05] hover:ring-2 ring-accent">
+                    <span class="text-4xl mb-2" role="img" aria-label="Power BI Icon">📈</span>
+                    <p class="text-lg font-semibold text-white">Power BI</p>
+                    <p class="text-xs text-gray-400">Reporting/BI</p>
+                </div>
+
+                <!-- Git/GitHub Skill Card (Version Control) -->
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.05] hover:ring-2 ring-accent">
+                    <span class="text-4xl mb-2" role="img" aria-label="Git Icon">⚙️</span>
+                    <p class="text-lg font-semibold text-white">Git / VS Code</p>
+                    <p class="text-xs text-gray-400">Tools</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section -->
+        <section id="projects" class="py-20 md:py-32 bg-gray-800 rounded-xl px-6 sm:px-12">
+            <h2 class="text-4xl font-bold mb-10 border-b-4 border-accent pb-2 inline-block">
+                Data Science Projects
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Project Card 1: Developer Salary Prediction -->
+                <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform hover:translate-y-[-8px] transition duration-300 hover:ring-4 ring-accent">
+                    <img src="https://placehold.co/600x400/1F2937/2DD4BF?text=Salary+Prediction+Model" alt="Salary Prediction Project Screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-accent">Developer Salary Prediction and Data Exploration</h3>
+                        <p class="text-gray-400 mb-4">
+                            Leveraged the Stack Overflow Survey (2024) to construct a robust machine learning model for annual salary prediction.
+                            <ul>
+                                <li class="text-sm ml-4 list-disc">Implemented a **Random Forest Regressor** optimized via **Randomized SearchCV**.</li>
+                                <li class="text-sm ml-4 list-disc">Achieved a strong predictive performance with **$R^2 \approx 0.85$** on training data.</li>
+                                <li class="text-sm ml-4 list-disc">Utilized **Streamlit** for potential model deployment/demonstration.</li>
+                            </ul>
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">Tech Stack: Python, Scikit-learn, Pandas, NumPy, Streamlit</p>
+                        <div class="flex space-x-4 mt-4">
+                            <!-- Link Placeholder. Update the '#' with your actual project URL -->
+                            <a href="https://github.com/Rajendrasinh9408" target="_blank" class="text-sm font-medium text-white bg-accent px-3 py-1 rounded hover:bg-accent-dark transition duration-300">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Student Performance Analysis -->
+                <div class="bg-gray-900 rounded-xl shadow-2xl overflow-hidden transform hover:translate-y-[-8px] transition duration-300 hover:ring-4 ring-accent">
+                    <img src="https://placehold.co/600x400/1F2937/2DD4BF?text=Performance+Dashboard+Viz" alt="Student Performance Analysis Screenshot" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-accent">Student Performance Analysis & Reporting</h3>
+                        <p class="text-gray-400 mb-4">
+                            Comprehensive analysis to identify factors influencing student outcomes (ethnicity, parental education, etc.).
+                            <ul>
+                                <li class="text-sm ml-4 list-disc">Employed **SQL** (MySQL) for efficient data preprocessing and structuring.</li>
+                                <li class="text-sm ml-4 list-disc">Created insightful **Power BI dashboards** to visualize trends and attendance impact.</li>
+                                <li class="text-sm ml-4 list-disc">Focused on **Exploratory Data Analysis (EDA)** to inform academic strategies.</li>
+                            </ul>
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">Tech Stack: MySQL, Power BI, Data Visualization, EDA</p>
+                        <div class="flex space-x-4 mt-4">
+                            <!-- Link Placeholder. Update the '#' with your actual project URL -->
+                            <a href="https://github.com/Rajendrasinh9408" target="_blank" class="text-sm font-medium text-white bg-accent px-3 py-1 rounded hover:bg-accent-dark transition duration-300">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="py-20 md:py-32">
+            <h2 class="text-4xl font-bold mb-10 border-b-4 border-accent pb-2 inline-block">
+                Get In Touch
+            </h2>
+            <div class="max-w-xl mx-auto text-center">
+                <p class="text-xl text-gray-400 mb-8">
+                    I am actively exploring opportunities in Data Analysis and Machine Learning. If you have an exciting project or role, please feel free to reach out.
+                </p>
+
+                <!-- Mock Contact Form (Action attribute needs a server-side endpoint) -->
+                <form action="#" method="POST" class="space-y-6 bg-gray-800 p-8 rounded-xl shadow-2xl">
+                    <div>
+                        <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent-light focus:border-accent-light text-gray-100">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent-light focus:border-accent-light text-gray-100">
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" rows="5" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent-light focus:border-accent-light text-gray-100"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 text-lg font-semibold text-gray-900 bg-accent rounded-lg shadow-xl hover:bg-teal-500 transition duration-300">
+                        Send Message
+                    </button>
+                    <!-- Success/Error Message Box -->
+                    <div id="status-message" class="text-center mt-4 hidden p-3 rounded-lg text-sm font-medium"></div>
+                </form>
+
+                <div class="mt-8 text-lg text-gray-400 space-y-2">
+                    <p class="mb-2">Or connect with me directly:</p>
+                    <p class="text-accent font-semibold">Email: <a href="mailto:rajendrasinh.gohil940@email.com" class="hover:underline">rajendrasinh.gohil940@email.com</a></p>
+                    <p class="text-accent font-semibold">LinkedIn: <a href="https://www.linkedin.com/in/Rajendrasinh-Gohil" target="_blank" class="hover:underline">Rajendrasinh-Gohil</a></p>
+                    <p class="text-accent font-semibold">GitHub: <a href="https://github.com/Rajendrasinh9408" target="_blank" class="hover:underline">Rajendrasinh9408</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-12 py-8">
+        <div class="container mx-auto max-w-7xl px-4 text-center text-gray-500">
+            <p>&copy; 2025 Rajendrasinh Gohil. Built with Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Smooth Scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const form = document.querySelector('form');
+            const statusMessage = document.getElementById('status-message');
+
+            // 1. Mobile Menu Toggle
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // 2. Smooth Scrolling Logic
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const href = link.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                            // Scroll smoothly to the target section
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 64, // Subtract header height
+                                behavior: 'smooth'
+                            });
+                        }
+                        // Close mobile menu after click (if open)
+                        if (!mobileMenu.classList.contains('hidden')) {
+                             mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // 3. Simple Form Handling (Prevents default submission and shows a message)
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // Simple form validation and display success message
+                statusMessage.classList.remove('hidden', 'bg-red-600/20', 'text-red-300');
+                statusMessage.classList.add('bg-green-600/20', 'text-green-300');
+                statusMessage.textContent = "Thank you for your message! I'll get back to you soon.";
+
+                // Clear the form after a short delay
+                setTimeout(() => {
+                    form.reset();
+                    statusMessage.classList.add('hidden');
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>
